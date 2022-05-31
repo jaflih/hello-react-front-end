@@ -6,18 +6,16 @@ import store from './configureStore';
 
 import HelloWorld from './HelloWorld';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HelloWorld />} />
-          </Routes>
-        </BrowserRouter>
-      </Provider>
-    );
-  }
+function App() {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HelloWorld />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  );
 }
 
 export default App;

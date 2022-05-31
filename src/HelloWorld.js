@@ -18,7 +18,7 @@ export default function HelloWorld() {
         Greeting:
         {hello}
       </h1>
-      <button className="helloBtn" onClick={handleClick}>
+      <button className="helloBtn" onClick={handleClick} type="submit">
         Get Random
       </button>
     </>
